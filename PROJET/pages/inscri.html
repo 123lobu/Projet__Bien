@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscrit</title>
+    <link rel="stylesheet" href="inscri.css">
+</head>
+<body>
+    <div class="form-containerr">
+        <h2>creer votre compte</h2>
+
+
+        <form id="registrationForm">
+            <!-- le nom -->
+             <div class="form-group">
+                <label for="fullname">Nom </label> 
+                <input type="text" id="fullname" name="fullname" required>  
+                <label for="Post-nom">Post-nom + prénom</label>
+                <input type="text" id="Post-nom" name="Post-nom" required> 
+             </div>
+             <!-- e mail -->
+              <div class="form-group">
+                <label for="email">Adresse email</label> <br>
+                <input type="email" id="email" required>
+                
+              </div>
+              <!-- mots de passe -->
+             <div class="form-group"> 
+                <label for="password" id="password">Enter votre mot de passe</label>
+                <input type="password" id="password" required> 
+             </div>
+             <!-- confirmation -->
+              <div class="form-group">
+                <label for="confirmation">Confirmer les mot de passe</label>
+                <input type="password" id="confirmation" required>
+              </div>
+
+             <!-- date de naissance -->
+                <div class="form-group">
+                    <label for="date">Date de naissance</label>
+                    <input type="date" id="date" required>
+
+                </div>
+                <!-- genre -->
+                 <div class="form-group">
+                    <label for="genre">Genre</label>
+                    <select id="genre">
+                        <option value="">selectionner...</option>
+                        <option value="male">Masculin</option>
+                        <option value="femme">Féminnin</option>
+                        <option value="autre">pas de precision</option>
+
+                    </select>
+                 </div>
+
+                 <!-- bouton -->
+                  <button type="submit">s'inscire</button>
+
+                  <div class="deja--un-compte">
+                    déja un compte ?
+                    <a href="connect.html">se connecter</a>
+                    
+                 
+
+        </form>
+
+    </div>
+     
+
+
+
+
+</body>
+</html>
