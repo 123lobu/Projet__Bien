@@ -1951,7 +1951,7 @@ footer{
       width: 120px;
       align-items: center;
       flex-direction: column;
-      gap: 7px;
+      /* gap: 7px; */
       position: relative;
       
       
@@ -2072,5 +2072,10 @@ footer{
     .email{
         padding: 10px;
     }
+    body{
+        overflow-x: hidden;
+    }
+
+}
 
 
