@@ -2079,3 +2079,11 @@ footer{
 }
 
 
+
+.search--bar input:focus{
+    background: linear-gradient(43deg, #ffffff, #ffffff, #93adc2, #2871ad);
+    color: #000000;
+    font-weight: bold;
+    border-bottom-left-radius: 23px;
+}
+
