@@ -95,6 +95,17 @@
         color: rgb(0, 0, 0);
 
       }
+      form select{
+        color: rgb(255, 0, 0);
+        background: radial-gradient(circle, #a57373,#6d8bd1);
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        padding: 12px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 12px;
+        border: top left radius 12px; 
+
+      }
      .form--ulaires label{
         position: relative;
         margin-bottom: 6px;
@@ -187,6 +198,16 @@
                     <label for="email">Email :</label><br> 
                     <input type="email" id="email" name="email" required placeholder="Entrez votre email"> <br>
                     <br>
+                    <h3>choisie la devise de ton pays</h3>
+                    <select name="devise" id="devise"  required>
+                        <option value="">--choisir la devise--</option>
+                        <option value="FCFA">CDF</option>
+                        <option value="USD">Dollar américain (USD)</option>
+                        <option value="EUR">Euro (EUR)</option>
+                       
+                        
+            
+                    </select> <br> <br>
                     <label for="notes">notes de commande :</label> 
                     <br>
                     
