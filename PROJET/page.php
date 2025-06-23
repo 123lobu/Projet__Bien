@@ -4,7 +4,7 @@
     $nom = htmlspecialchars($_POST['name']);
     $pays = htmlspecialchars($_POST['pays']);
     $montant = htmlspecialchars($_POST['montant']);
-    $adresse = htmlspecialchars($_POST['adress']);
+    $adresse = htmlspecialchars($_POST['address']);
     $telephone = htmlspecialchars($_POST['phone']);
     $mail = htmlspecialchars($_POST['email']);
     $devise = htmlspecialchars($_POST['devise']);
@@ -23,11 +23,11 @@
     $req->bindParam(':nom', $nom);
     $req->bindParam(':pays', $pays);
     $req->bindParam(':montant', $montant);
+    $req->bindParam(':adress', $adresse);
     $req->bindParam(':telephone', $telephone);
     $req->bindParam(':mail', $mail);
     $req->bindParam(':devise', $devise);
     $req->bindParam(':notescmd', $notescmd);
-    
     $req->execute();
 
 ?> 
