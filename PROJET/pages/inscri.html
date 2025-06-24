@@ -11,7 +11,7 @@
         <h2>creer votre compte</h2>
 
 
-        <form id="registrationForm">
+        <form id="registrationForm" method="post" action="inscrit.php">
             <!-- le nom -->
              <div class="form-group">
                 <label for="fullname">Nom </label> 
@@ -22,30 +22,30 @@
              <!-- e mail -->
               <div class="form-group">
                 <label for="email">Adresse email</label> <br>
-                <input type="email" id="email" required>
+                <input type="email" id="email" required name="email">
                 
               </div>
               <!-- mots de passe -->
              <div class="form-group"> 
                 <label for="password" id="password">Enter votre mot de passe</label>
-                <input type="password" id="password" required> 
+                <input type="password" id="password" required name="password"> 
              </div>
              <!-- confirmation -->
-              <div class="form-group">
+              <!-- <div class="form-group">
                 <label for="confirmation">Confirmer les mot de passe</label>
                 <input type="password" id="confirmation" required>
-              </div>
+              </div> -->
 
              <!-- date de naissance -->
                 <div class="form-group">
                     <label for="date">Date de naissance</label>
-                    <input type="date" id="date" required>
+                    <input type="date" id="date" required name="date">
 
                 </div>
                 <!-- genre -->
                  <div class="form-group">
                     <label for="genre">Genre</label>
-                    <select id="genre">
+                    <select id="genre" name="genre">
                         <option value="">selectionner...</option>
                         <option value="male">Masculin</option>
                         <option value="femme">Féminnin</option>
