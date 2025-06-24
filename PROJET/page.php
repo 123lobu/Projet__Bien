@@ -12,8 +12,8 @@
 
     //connexion à la base de données
     try{
-        $bdd = new PDO('mysql:host=localhost;dbname:projet', 'root', '');
-        echo 'connexion établie';
+        $bdd = new PDO("mysql:host=localhost;dbname=projet", "root", "");
+        echo 'connexion établie et reussie';
     }
     catch(Exception $e){
         die('Erreur: ' .$e->getMessage());
@@ -29,5 +29,4 @@
     $req->bindParam(':devise', $devise);
     $req->bindParam(':notescmd', $notescmd);
     $req->execute();
-
 ?> 
