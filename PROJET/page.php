@@ -13,7 +13,7 @@
     //connexion à la base de données
     try{
         $bdd = new PDO("mysql:host=localhost;dbname=projet", "root", "");
-        echo 'connexion établie et reussie';
+        echo 'MERCI POUR VOTRE COMMANDE !. ON VA VOUS CONTACTER BIENTÔT';
     }
     catch(Exception $e){
         die('Erreur: ' .$e->getMessage());
